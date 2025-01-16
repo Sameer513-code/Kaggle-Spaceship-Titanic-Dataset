@@ -13,3 +13,8 @@ Here it is.<br>
 6. Fine-tune your models and combine them into a great solution.<br>
 7. Present your solution.<br>
 8. Launch, monitor, and maintain your system.<br>
+<br>
+##1. Frame the problem<br>
+We're challenged to predict which passengers were transported by the anomaly using records recovered from the spaceship’s damaged computer system.<br>
+<br>
+
