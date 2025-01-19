@@ -19,10 +19,11 @@ We're challenged to predict which passengers were transported by the anomaly usi
 <br>
 2. Get the data<br>
 I've gathered the data from Kaggle's data repository.<br>
+<br>
 3. Explore the data<br>
 Know the data type of each field. Check for duplicates and errors in values. Errors can be fixed using skip function from pandas.<br>
 Check for null values. If percentage of null values is small then just replace them with with best suitable values according to the data.<br>
-Functions: df.dropna(),
+Functions: df.dropna()<br>
 Find relation between features using graphs like histogram, scatterplot, heatmap.<br>
 Functions: df.corr()
 
