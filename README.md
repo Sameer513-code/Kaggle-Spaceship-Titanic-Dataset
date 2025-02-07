@@ -52,18 +52,18 @@ C = 1.0  # Regularization strength (smaller = stronger regularization)
 
 **Hyperparameters Used:**  
 ```python
-k = 56 #Nearest Neighbour
+k = 60 #Nearest Neighbour
 ```
 
 ---
 
 ### 3️⃣ XGBoost  
 **Algorithm:**  
-- A gradient boosting model optimized for speed and performance.  
+- A gradient boosting model optimized for speed and performance. It uses a technique called bagging to build full decision trees in parallel from random bootstrap samples of the data set. The final prediction is an average of all of the decision tree predictions.
 
 **Advantages:**  
 - Handles missing values efficiently.  
-- Works well with structured/tabular data.  
+- A library that’s highly portable and currently runs on OS X, Windows, and Linux platforms  
 - Achieves **high accuracy**.  
 
 **Disadvantages:**  
@@ -86,12 +86,12 @@ subsample = 0.8  # Fraction of samples used per boosting round
 | Logistic Regression | 78%        |
 | KNN                 | 79.42%     |
 | XGBoost             | 79.84%     |
+| Random Forest       | 79.84%     |
 
 ---
 
 ## Improvements  
 - **Hyperparameter Optimization** – Use **GridSearchCV** or **RandomizedSearchCV** to find optimal parameters.  
-- **Handling Class Imbalance** – Try **SMOTE** or **weighted loss functions** if needed.  
 
 ---
 
