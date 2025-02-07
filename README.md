@@ -81,31 +81,22 @@ subsample = 0.8  # Fraction of samples used per boosting round
 ---
 
 ## Model Performance  
-| Model                | Accuracy |
-|----------------------|---------|
-| Logistic Regression | 78%     |
-| Random Forest       | 85%     |
-| XGBoost            | 88%     |
+| Model               |  Accuracy  |
+|---------------------|------------|
+| Logistic Regression | 78%        |
+| KNN                 | 79.42%     |
+| XGBoost             | 79.84%     |
 
 ---
 
-## Future Improvements  
-- **Feature Engineering** – Create new meaningful features to boost performance.  
+## Improvements  
 - **Hyperparameter Optimization** – Use **GridSearchCV** or **RandomizedSearchCV** to find optimal parameters.  
-- **Stacking Models** – Combine multiple models for even better predictions.  
 - **Handling Class Imbalance** – Try **SMOTE** or **weighted loss functions** if needed.  
 
 ---
 
 ### Summary  
-This project involved training **three models** to predict transportation status based on given passenger data.  
-The **XGBoost model performed the best** with **88% accuracy**, making it the most effective for deployment. 🚀  
-
----
-
-This should be **perfectly formatted for GitHub** 📄  
-Let me know if you want any tweaks! 😊
-
+Out of three models, **XGBoost model performed the best** with **79.84% accuracy**, making it the most effective for deployment. 🚀  
 
 
 
