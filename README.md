@@ -19,18 +19,16 @@ Before implementing models, I followed a structured **machine learning workflow*
 
 ## Models Implemented  
 
-### 1️⃣ Logistic Regression  
+### Logistic Regression  
 **Algorithm:**  
-- A simple linear model for binary classification.  
-
+- Its an algorithm that estimates the probability of a binary outcome using the **sigmoid function**, that takes input as independent variables and produces a probability value between 0 and 1. It applies **log-odds transformation** to model relationships between input features and the target variable. 
 **Advantages:**  
-- Easy to implement and interpret.  
-- Computationally efficient.  
+- Easy to implement when output must be categorical value such as 0 or 1, Yes or no, etc.
+- It not only provides a measure of how appropriate a predictor(coefficient size)is, but also its direction of association (positive or negative). 
 - Works well on small datasets.  
 
 **Disadvantages:**  
 - Assumes a **linear relationship** between features and the target.  
-- Not suitable for **complex relationships**.  
 
 **Hyperparameters Used:**  
 ```python
@@ -40,23 +38,21 @@ C = 1.0  # Regularization strength (smaller = stronger regularization)
 
 ---
 
-### 2️⃣ Random Forest  
+### 2️⃣ KNN
 **Algorithm:**  
-- An ensemble method that builds multiple decision trees and combines their results.  
+- KNN uses distance metrics to identify nearest neighbour, operates on the principle of similarity where it predicts the label or value of a new data point by considering the labels or values of its K nearest neighbors in the training dataset. The metrics used are Euclidean, Manhattan and more.
 
 **Advantages:**  
-- Reduces overfitting compared to single decision trees.  
-- Handles **missing values** and **categorical data** well.  
+- KNN is simple to implement and understand. 
+- Used in many fields, including image recognition, handwriting detection, and video recognition.  
 
 **Disadvantages:**  
 - Computationally **expensive**, especially for large datasets.  
-- Less **interpretable** compared to simpler models.  
+- Doesn't perform as well as other complex algorithms like neural networks, decision trees, and support vector machines.  
 
 **Hyperparameters Used:**  
 ```python
-n_estimators = 100  # Number of trees in the forest
-max_depth = None  # Maximum depth of each tree
-min_samples_split = 2  # Minimum samples required to split a node
+k = 56 #Nearest Neighbour
 ```
 
 ---
